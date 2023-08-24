@@ -44,3 +44,8 @@ sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-li
 sudo apt install gdebi-core
 
 sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
+
+
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
