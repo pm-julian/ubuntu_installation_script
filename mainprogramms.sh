@@ -1,3 +1,4 @@
+# DOcker Compose
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
 
@@ -28,13 +29,13 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
 
-
+# Postman
 sudo apt update
 
 sudo snap install postman
 
 
-
+# Git Hub Desktop
 sudo apt update
 
 sudo apt install git
@@ -46,10 +47,10 @@ sudo apt install gdebi-core
 sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
 
 
-
+# Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
-
+#Jetbrains toolbox
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
