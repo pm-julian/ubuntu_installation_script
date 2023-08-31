@@ -55,6 +55,9 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 #Jetbrains toolbox
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
+#OpenVPN
+sudo apt-get install openvpn
+
 
 
     echo "";
