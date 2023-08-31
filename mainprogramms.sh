@@ -53,6 +53,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
 #Jetbrains toolbox
+sudo apt install libfuse2
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 #OpenVPN
