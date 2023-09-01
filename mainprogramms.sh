@@ -28,7 +28,6 @@ if [ -z "$(cat /etc/group | grep docker)" ]; then
 fi
 
 sudo usermod -aG docker $USER
-newgrp docker
 
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
@@ -37,7 +36,7 @@ sudo systemctl enable containerd.service
 # Postman
 sudo apt update
 
-sudo snap install -y postman
+sudo snap install postman
 
 
 # Git Hub Desktop
