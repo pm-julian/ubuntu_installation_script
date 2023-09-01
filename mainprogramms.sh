@@ -23,7 +23,9 @@ sudo chmod a+x /usr/local/bin/docker-compose
 
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-sudo groupadd docker
+if [ -z "$(cat /etc/group | grep docker)" ]; then
+  sudo groupadd docker
+fi
 
 sudo usermod -aG docker $USER
 newgrp docker
