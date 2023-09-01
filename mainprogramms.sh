@@ -24,6 +24,7 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 sudo groupadd docker
 
 sudo usermod -aG docker $USER
+newgrp docker
 
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
