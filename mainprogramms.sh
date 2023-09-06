@@ -6,11 +6,11 @@ sudo apt-get update
 sudo snap install postman
 
 # Git Hub Desktop
-sudo apt install git
+sudo apt install git -y
 
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
 
-sudo apt install gdebi-core
+sudo apt install gdebi-core -y
 
 sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
 
@@ -24,13 +24,13 @@ sudo apt install libfuse2 -y
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 #OpenVPN
-sudo apt-get install openvpn
+sudo apt-get install openvpn -y
 
 #Slack
 sudo snap install slack --classic
 
 #Flameshot
-sudo apt install flameshot
+sudo apt install flameshot -y
 
 #ZSH
 sudo apt install zsh -y
@@ -52,7 +52,7 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.17.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 
