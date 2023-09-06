@@ -66,6 +66,7 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
 #Jetbrains toolbox
+sudp apt-get update
 sudo apt install libfuse2
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
