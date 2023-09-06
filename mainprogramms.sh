@@ -33,6 +33,10 @@ sudo apt install zsh -y
 #VSCode
 sudo snap install --classic code
 
+#Jetbrains toolbox
+sudo apt install libfuse2
+curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
+
 # Docker Compose
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg -y
@@ -55,24 +59,22 @@ sudo chmod a+x /usr/local/bin/docker-compose
 
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
+echo "Hello 1"
 if [ -z "$(cat /etc/group | grep docker)" ]; then
   sudo groupadd docker
 fi
+echo "Hello 2"
 
 sudo usermod -aG docker $USER
+echo "Hello 3"
 newgrp docker
+echo "Hello 4"
 
 sudo systemctl enable docker.service
+echo "Hello 5"
 sudo systemctl enable containerd.service
+echo "Hello 6"
 
-#Jetbrains toolbox
-echo "Jetbrain Beginn"
-echo ""
-echo ""
-echo ""
-sudp apt-get update
-sudo apt install libfuse2
-curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 
 echo "";
