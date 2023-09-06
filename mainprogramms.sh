@@ -3,7 +3,7 @@
 sudo apt-get update
 
 # Postman
-sudo snap install postman -y
+sudo snap install postman
 
 # Git Hub Desktop
 sudo apt install git -y
@@ -17,12 +17,6 @@ sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb -n
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
-
-
-#Jetbrains toolbox
-sudo apt update
-sudo apt install libfuse2 -y
-curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 #OpenVPN
 sudo apt-get install openvpn -y
@@ -70,6 +64,10 @@ newgrp docker
 
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
+#Jetbrains toolbox
+sudo apt install libfuse2 -y
+curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 
 echo "";
