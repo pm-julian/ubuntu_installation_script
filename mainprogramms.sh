@@ -38,7 +38,6 @@ sudo apt install libfuse2
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 # Docker Compose
-sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg -y
 
 sudo install -m 0755 -d /etc/apt/keyrings 
