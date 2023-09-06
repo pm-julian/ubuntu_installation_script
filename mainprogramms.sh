@@ -54,18 +54,6 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-
-echo "";
-echo "";
-echo "";
-echo "";
-echo "";
-docker --verison
-echo "";
-echo "";
-echo "";
-echo "";
-
 sudo curl -SL https://github.com/docker/compose/releases/download/v2.17.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 
 sudo chmod a+x /usr/local/bin/docker-compose
@@ -81,9 +69,6 @@ newgrp docker
 
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
-
-exec bash
-docker --version
 
 
 echo "";
