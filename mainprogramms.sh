@@ -3,16 +3,16 @@
 sudo apt-get update
 
 # Postman
-sudo snap install postman
+sudo snap install postman -y
 
 # Git Hub Desktop
-sudo apt install git 
+sudo apt install git -y
 
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-3.1.1-linux1/GitHubDesktop-linux-3.1.1-linux1.deb
 
-sudo apt install gdebi-core 
+sudo apt install gdebi-core -y
 
-sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb
+sudo gdebi GitHubDesktop-linux-3.1.1-linux1.deb -n
 
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -21,27 +21,27 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 #Jetbrains toolbox
 sudo apt update
-sudo apt install libfuse2 
+sudo apt install libfuse2 -y
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
 #OpenVPN
-sudo apt-get install openvpn 
+sudo apt-get install openvpn -y
 
 #Slack
 sudo snap install slack --classic
 
 #Flameshot
-sudo apt install flameshot 
+sudo apt install flameshot -y
 
 #ZSH
-sudo apt install zsh 
+sudo apt install zsh -y
 
 #VSCode
 sudo snap install --classic code
 
 # Docker Compose
 sudo apt-get update
-sudo apt-get install ca-certificates curl gnupg
+sudo apt-get install ca-certificates curl gnupg -y
 
 sudo install -m 0755 -d /etc/apt/keyrings 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
