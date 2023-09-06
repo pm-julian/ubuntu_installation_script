@@ -58,21 +58,16 @@ sudo chmod a+x /usr/local/bin/docker-compose
 
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
-echo "Hello 1"
 if [ -z "$(cat /etc/group | grep docker)" ]; then
   sudo groupadd docker
 fi
-echo "Hello 2"
 
 sudo usermod -aG docker $USER
-echo "Hello 3"
-newgrp docker
-echo "Hello 4"
 
 sudo systemctl enable docker.service
-echo "Hello 5"
+
 sudo systemctl enable containerd.service
-echo "Hello 6"
+
 
 
 
@@ -92,3 +87,5 @@ echo " :   : :   :   : :    :         :           :         :: :::   : :  :    :
 echo "";
 echo "";
 echo "";
+
+newgrp docker
