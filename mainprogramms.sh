@@ -62,7 +62,6 @@ sudo apt install zsh -y
 sudo snap install --classic code
 
 # Jetbrains toolbox
-sudo apt-get update
 sudo apt install libfuse2
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
 
